@@ -1,0 +1,105 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela de Líderes Bolivia</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ESCUELA DE LÍDERES - BOLIVIA</h1>
+            <h2>Formulario de Contacto</h2>
+        </header>
+
+        <main class="main-content">
+            <section class="form-section" aria-labelledby="form-heading">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="fullName">Nombre y Apellido</label>
+                        <input type="text" id="fullName" name="fullName" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="university">Universidad</label>
+                        <input type="text" id="university" name="university" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Grado</label>
+                        <select id="grade" name="grade" required aria-required="true">
+                            <option value="" disabled selected>Seleccione su grado</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Técnico Medio">Técnico Medio</option>
+                            <option value="Técnico Superior">Técnico Superior</option>
+                            <option value="Licenciatura">Licenciatura</option>
+                            <option value="Diplomado">Diplomado</option>
+                            <option value="Maestría">Maestría</option>
+                            <option value="Doctorado">Doctorado</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="documentType">¿Qué documento requiere?</label>
+                        <select id="documentType" name="documentType" required aria-required="true">
+                            <option value="" disabled selected>Seleccione el documento</option>
+                            <option value="Monografía">Monografía</option>
+                            <option value="Proyecto de Grado">Proyecto de Grado</option>
+                            <option value="Trabajo Dirigido">Trabajo Dirigido</option>
+                            <option value="Tesis">Tesis</option>
+                            <option value="Artículo de Investigación">Artículo de Investigación</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Número de WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required aria-required="true" placeholder="+591 7...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar mensaje directo a WhatsApp</button>
+                </form>
+            </section>
+            <section class="info-section" aria-labelledby="info-heading">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1530.2223838328114!2d-68.1312358241477!3d-16.50677613534571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f215784feacd5%3A0x32eaf94205e978ed!2sEscuela%20de%20L%C3%ADderes%20Bolivia!5e0!3m2!1ses-419!2sbo!4v1716585141203!5m2!1ses-419!2sbo" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        title="Ubicación de Escuela de Líderes Bolivia"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact-info">
+                    <h3 id="info-heading">Nuestros Datos</h3>
+                    <address>
+                        <strong>Dirección:</strong><br>
+                        Av. 20 de octubre No. 2034 Piso 1 Of. 103<br>
+                        (Lado aduana nacional, casi JJ Pérez)<br>
+                        La Paz - Bolivia
+                    </address>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/59179115511">+591 79115511</a></p>
+                    <p>
+                        <strong>Director General (Contactos Internacionales):</strong><br>
+                        Ph.D. Emilio Ortega Tarifa<br>
+                        <a href="https://wa.me/59179156813">+591 79156813</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <a href="#" class="home-btn">Volver a Home</a>
+        </footer>
+    </div>
+    
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
